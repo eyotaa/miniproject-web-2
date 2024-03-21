@@ -1,0 +1,46 @@
+/* 
+/* 
+	Section Background (bg.css)
+	
+	Table of Content
+	- general settings for section & subheader
+	- background settings for section
+	- media query
+/*
+
+
+/* background settings for section */
+
+
+/* bg 1 */
+#section-home {background:url(../asset/bg1.gif) fixed;}
+
+/* bg 2 */
+#section-experiences {background:url(../asset/bg2.gif) fixed;}
+
+/* bg 3 */
+#section-contact {background:url(../asset/bg3.gif) fixed;}
+
+
+
+body.custom-bg-1{background:none;}
+section{
+-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+/* media query */
+@media only screen and (max-width: 767px) {
+	section{
+	-webkit-background-size: auto 100% !important;
+	-moz-background-size: auto 100% !important;
+	-o-background-size: auto 100% !important;
+	background-size: auto 100% !important;
+	background-attachment:scroll !important;
+	background-position:top !important;
+	}
+}
